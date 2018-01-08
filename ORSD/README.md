@@ -6,21 +6,21 @@ El resultado de este proceso es el ORSD que incluye:
   - **Objetivo**: el propósito principal del desarrollo de la ontología residirá en facilitar a cualquier usuario el acceso a información 
     pública sobre el equipamiento municipal de cualquier localidad que dé soporte de datos abiertos sobre este tipo de instalaciones.
     
-  - Nivel de madurez: se utilizará el lenguaje OWL (Web Ontology Language), el cual es utilizado para la publicación y compartición 
+  - **Nivel de madurez**: se utilizará el lenguaje OWL (Web Ontology Language), el cual es utilizado para la publicación y compartición 
     de datos usando ontologías. 
   
-  - Alcance de la ontología: recogerá información referente a equipamiento municipal clasificado por un tesauro que establece en el 
+  - **Alcance de la ontología**: recogerá información referente a equipamiento municipal clasificado por un tesauro que establece en el 
     tipo de equipamiento municipal del que se requiere información. 
   
-  - Grupo objetivo: se estima que los usuarios de esta ontología serán ciudadanos que desean acceder a la información pública disponible
+  - **Grupo objetivo**: se estima que los usuarios de esta ontología serán ciudadanos que desean acceder a la información pública disponible
     sobre el equipamiento municipal de cualquier localidad que desarrolle una política de datos abiertos y desarrolladores y empresas 
     que quieran reutilizar los datos. 
     
-  - Usos posibles de la ontología: el objetivo principal de la ontología será ofrecer información sobre los diferentes equipamientos 
+  - **Usos posibles de la ontología**: el objetivo principal de la ontología será ofrecer información sobre los diferentes equipamientos 
     municipales. Además, dicha información será estructurada según un modelo de datos, el cual se basará en vocabularios existentes 
     (en gran medida), facilitando así la estandarización de la ontología. 
     
-  - Preguntas de competencia: 
+  - **Preguntas de competencia**: 
     
     1.- ¿Un equipamiento es un elemento único? ¿Merece un identificador único (código)? 
     
