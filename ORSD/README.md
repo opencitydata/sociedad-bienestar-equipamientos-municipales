@@ -21,20 +21,36 @@ El resultado de este proceso es el ORSD que incluye:
     (en gran medida), facilitando así la estandarización de la ontología. 
     
   - Preguntas de competencia: 
+    
     1.- ¿Un equipamiento es un elemento único? ¿Merece un identificador único (código)? 
+    
     2.- ¿Cuál es la clasificación de los diferentes equipamientos? ¿Cómo deben clasificarse? 
+      
       2.1.- ¿Cuáles son los sectores que los clasifican? 
+      
       2.2.- ¿Un tipo concreto puede pertenecer a diferentes sectores? 
+     
       2.3.- ¿Un equipamiento puede dar un único servicio? En caso contrario ¿Existe un número máximo de servicios que puede dar un 
       equipamiento? 
+      
       2.4.- ¿Existen los sub-servicios? 
-        2.4.1.- ¿Estos poseen identificador único? 
-      2.5.- ¿Estos poseen identificador único? 
+       
+       2.4.1.- ¿Estos poseen identificador único? 
+     
+     2.5.- ¿Estos poseen identificador único? 
+      
       2.6.- ¿Un equipamiento puede ser de un único tipo? 
+      
       2.7.- ¿Existen los sub-tipos? 
-        2.7.1.- ¿Estos poseen identificador único? 
-      2.8.- ¿Estos poseen identificador único? 
+       
+       2.7.1.- ¿Estos poseen identificador único? 
+     
+     2.8.- ¿Estos poseen identificador único? 
+      
       2.9.- ¿Cómo conocer el listado de todos los equipamientos asociados a un determinado sector? 29 
+      
       2.10.- ¿Cómo conocer el listado de todos los equipamientos asociados a un determinado tipo concreto de equipamiento? 
+    
     3.- ¿Cuál es la localización de un equipamiento? ¿Cómo puedo acceder a ella? 
+    
     4.- ¿Cuáles son los horarios de un equipamiento? ¿Cómo puedo acceder a ellos? 
