@@ -3,7 +3,7 @@
 La Especificación de Requisitos de una Ontología es el proceso de recopilación de requerimientos que una ontología debe cumplir. 
 El resultado de este proceso es el ORSD que incluye: 
 
-  - Objetivo: el propósito principal del desarrollo de la ontología residirá en facilitar a cualquier usuario el acceso a información 
+  - **Objetivo**: el propósito principal del desarrollo de la ontología residirá en facilitar a cualquier usuario el acceso a información 
     pública sobre el equipamiento municipal de cualquier localidad que dé soporte de datos abiertos sobre este tipo de instalaciones.
     
   - Nivel de madurez: se utilizará el lenguaje OWL (Web Ontology Language), el cual es utilizado para la publicación y compartición 
