@@ -1,1 +1,1122 @@
-[{"@id":"_:genid1","@type":["http://www.w3.org/2002/07/owl#Ontology"]}]
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+    }, {
+      "@id" : "_:genid3"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/equipamiento/tipo-equipamiento"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#inScheme"
+  } ]
+}, {
+  "@id" : "http://creativecommons.org/ns#license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/contributor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/date",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/identifier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/rights",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/hasFormat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/issued",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/source",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://schema.org/ContactPoint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://schema.org/sameAs" : [ {
+    "@id" : "https://schema.org/ContactPoint"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A contact point&#x2014;for example, a Customer Complaints department."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ContactPoint"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://schema.org/StructuredValue"
+  } ]
+}, {
+  "@id" : "http://schema.org/ContactPoint#email",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://schema.org/ContactPoint"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"
+  } ]
+}, {
+  "@id" : "http://schema.org/ContactPoint#faxNumber",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://schema.org/ContactPoint"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"
+  } ]
+}, {
+  "@id" : "http://schema.org/ContactPoint#telephone",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://schema.org/ContactPoint"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"
+  } ]
+}, {
+  "@id" : "http://schema.org/Intangible",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://schema.org/sameAs" : [ {
+    "@id" : "https://schema.org/Intangible"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A utility class that serves as the umbrella for a number of 'intangible' things such as quantities, structured values, etc."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Intangible"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://schema.org/Thing"
+  } ]
+}, {
+  "@id" : "http://schema.org/PostalAddress",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://schema.org/sameAs" : [ {
+    "@id" : "https://schema.org/PostalAddress"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The mailing address."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "PostalAddress"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://schema.org/ContactPoint"
+  } ]
+}, {
+  "@id" : "http://schema.org/StructuredValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://schema.org/sameAs" : [ {
+    "@id" : "https://schema.org/StructuredValue"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Structured values are used when the value of a property has a more complex structure than simply being a textual value or a reference to another thing."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "StructuredValue"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://schema.org/Intangible"
+  } ]
+}, {
+  "@id" : "http://schema.org/Thing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://schema.org/sameAs" : [ {
+    "@id" : "https://schema.org/Thing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The most generic type of item."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Thing"
+  } ]
+}, {
+  "@id" : "http://schema.org/Thing/ContactPoint#URL",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"
+  } ]
+}, {
+  "@id" : "http://schema.org/additionalType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "http://schema.org/Thing"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "http://schema.org/URL"
+  } ],
+  "http://schema.org/sameAs" : [ {
+    "@id" : "https://schema.org/additionalType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An additional type for the item, typically used for adding more specific types from external vocabularies in microdata syntax. This is a relationship between something and a class that the thing is in. In RDFa syntax, it is better to use the native RDFa syntax - the 'typeof' attribute - for multiple types. Schema.org tools may have only weaker understanding of extra types, in particular those defined externally."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "additionalType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+  } ]
+}, {
+  "@id" : "http://schema.org/address",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "http://schema.org/GeoCoordinates"
+  }, {
+    "@id" : "http://schema.org/GeoShape"
+  }, {
+    "@id" : "http://schema.org/Organization"
+  }, {
+    "@id" : "http://schema.org/Person"
+  }, {
+    "@id" : "http://schema.org/Place"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "http://schema.org/PostalAddress"
+  }, {
+    "@id" : "http://schema.org/Text"
+  } ],
+  "http://schema.org/sameAs" : [ {
+    "@id" : "https://schema.org/address"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Physical address of the item."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#Equipamiento"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "address"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://schema.org/PostalAddress"
+  } ]
+}, {
+  "@id" : "http://schema.org/addressCountry",
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "http://schema.org/GeoCoordinates"
+  }, {
+    "@id" : "http://schema.org/GeoShape"
+  }, {
+    "@id" : "http://schema.org/PostalAddress"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "http://schema.org/Country"
+  }, {
+    "@id" : "http://schema.org/Text"
+  } ],
+  "http://schema.org/sameAs" : [ {
+    "@id" : "https://schema.org/addressCountry"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The country. For example, USA. You can also provide the two-letter <a href=\"http://en.wikipedia.org/wiki/ISO_3166-1\">ISO 3166-1 alpha-2 country code</a>."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "addressCountry"
+  } ]
+}, {
+  "@id" : "http://schema.org/addressLocality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "http://schema.org/PostalAddress"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "http://schema.org/Text"
+  } ],
+  "http://schema.org/sameAs" : [ {
+    "@id" : "https://schema.org/addressLocality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The locality. For example, Mountain View."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://schema.org/PostalAddress"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "addressLocality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://schema.org/addressRegion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "http://schema.org/PostalAddress"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "http://schema.org/Text"
+  } ],
+  "http://schema.org/sameAs" : [ {
+    "@id" : "https://schema.org/addressRegion"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The region. For example, CA."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://schema.org/PostalAddress"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "addressRegion"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://schema.org/alternateName",
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "http://schema.org/Thing"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "http://schema.org/Text"
+  } ],
+  "http://schema.org/sameAs" : [ {
+    "@id" : "https://schema.org/alternateName"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An alias for the item."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "alternateName"
+  } ]
+}, {
+  "@id" : "http://schema.org/areaServed",
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "http://schema.org/ContactPoint"
+  }, {
+    "@id" : "http://schema.org/DeliveryChargeSpecification"
+  }, {
+    "@id" : "http://schema.org/Demand"
+  }, {
+    "@id" : "http://schema.org/Offer"
+  }, {
+    "@id" : "http://schema.org/Organization"
+  }, {
+    "@id" : "http://schema.org/Service"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "http://schema.org/AdministrativeArea"
+  }, {
+    "@id" : "http://schema.org/GeoShape"
+  }, {
+    "@id" : "http://schema.org/Place"
+  }, {
+    "@id" : "http://schema.org/Text"
+  } ],
+  "http://schema.org/sameAs" : [ {
+    "@id" : "https://schema.org/areaServed"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The geographic area where a service or offered item is provided."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "areaServed"
+  } ]
+}, {
+  "@id" : "http://schema.org/availableLanguage",
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "http://schema.org/ContactPoint"
+  }, {
+    "@id" : "http://schema.org/LodgingBusiness"
+  }, {
+    "@id" : "http://schema.org/ServiceChannel"
+  }, {
+    "@id" : "http://schema.org/TouristAttraction"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "http://schema.org/Language"
+  }, {
+    "@id" : "http://schema.org/Text"
+  } ],
+  "http://schema.org/sameAs" : [ {
+    "@id" : "https://schema.org/availableLanguage"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A language someone may use with or at the item, service or place. Please use one of the language codes from the <a href=\"http://tools.ietf.org/html/bcp47\">IETF BCP 47 standard</a>. See also <a class=\"localLink\" href=\"http://schema.org/inLanguage\">inLanguage</a>"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "availableLanguage"
+  } ]
+}, {
+  "@id" : "http://schema.org/bccRecipient",
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "http://schema.org/ContactPoint"
+  } ]
+}, {
+  "@id" : "http://schema.org/billingAddress",
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "http://schema.org/PostalAddress"
+  } ]
+}, {
+  "@id" : "http://schema.org/category",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://schema.org/ccRecipient",
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "http://schema.org/ContactPoint"
+  } ]
+}, {
+  "@id" : "http://schema.org/contactOption",
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "http://schema.org/ContactPoint"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "http://schema.org/ContactPointOption"
+  } ],
+  "http://schema.org/sameAs" : [ {
+    "@id" : "https://schema.org/contactOption"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An option available on this contact point (e.g. a toll-free number or support for hearing-impaired callers)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "contactOption"
+  } ]
+}, {
+  "@id" : "http://schema.org/contactPoint",
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "http://schema.org/ContactPoint"
+  } ]
+}, {
+  "@id" : "http://schema.org/contactPoints",
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "http://schema.org/ContactPoint"
+  } ]
+}, {
+  "@id" : "http://schema.org/contactType",
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "http://schema.org/ContactPoint"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "http://schema.org/Text"
+  } ],
+  "http://schema.org/sameAs" : [ {
+    "@id" : "https://schema.org/contactType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A person or organization can have different contact points, for different purposes. For example, a sales contact point, a PR contact point and so on. This property is used to specify the kind of contact point."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "contactType"
+  } ]
+}, {
+  "@id" : "http://schema.org/deliveryAddress",
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "http://schema.org/PostalAddress"
+  } ]
+}, {
+  "@id" : "http://schema.org/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "http://schema.org/Thing"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "http://schema.org/Text"
+  } ],
+  "http://schema.org/sameAs" : [ {
+    "@id" : "https://schema.org/description"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A description of the item."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "description"
+  } ]
+}, {
+  "@id" : "http://schema.org/disambiguatingDescription",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "http://schema.org/Thing"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "http://schema.org/Text"
+  } ],
+  "http://schema.org/sameAs" : [ {
+    "@id" : "https://schema.org/disambiguatingDescription"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A sub property of description. A short description of the item used to disambiguate from other, similar items. Information from other properties (in particular, name) may be necessary for the description to be useful for disambiguation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "disambiguatingDescription"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://schema.org/description"
+  } ]
+}, {
+  "@id" : "http://schema.org/domainIncludes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://schema.org/email",
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "http://schema.org/ContactPoint"
+  }, {
+    "@id" : "http://schema.org/Organization"
+  }, {
+    "@id" : "http://schema.org/Person"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "http://schema.org/Text"
+  } ],
+  "http://schema.org/sameAs" : [ {
+    "@id" : "https://schema.org/email"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Email address."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "email"
+  } ]
+}, {
+  "@id" : "http://schema.org/faxNumber",
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "http://schema.org/ContactPoint"
+  }, {
+    "@id" : "http://schema.org/Organization"
+  }, {
+    "@id" : "http://schema.org/Person"
+  }, {
+    "@id" : "http://schema.org/Place"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "http://schema.org/Text"
+  } ],
+  "http://schema.org/sameAs" : [ {
+    "@id" : "https://schema.org/faxNumber"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The fax number."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "faxNumber"
+  } ]
+}, {
+  "@id" : "http://schema.org/gameLocation",
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "http://schema.org/PostalAddress"
+  } ]
+}, {
+  "@id" : "http://schema.org/grantee",
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "http://schema.org/ContactPoint"
+  } ]
+}, {
+  "@id" : "http://schema.org/homeLocation",
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "http://schema.org/ContactPoint"
+  } ]
+}, {
+  "@id" : "http://schema.org/hoursAvailable",
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "http://schema.org/ContactPoint"
+  }, {
+    "@id" : "http://schema.org/LocationFeatureSpecification"
+  }, {
+    "@id" : "http://schema.org/Service"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "http://schema.org/OpeningHoursSpecification"
+  } ],
+  "http://schema.org/sameAs" : [ {
+    "@id" : "https://schema.org/hoursAvailable"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The hours during which this service or contact is available."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hoursAvailable"
+  } ]
+}, {
+  "@id" : "http://schema.org/identifier",
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "http://schema.org/Thing"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "http://schema.org/PropertyValue"
+  }, {
+    "@id" : "http://schema.org/Text"
+  }, {
+    "@id" : "http://schema.org/URL"
+  } ],
+  "http://schema.org/sameAs" : [ {
+    "@id" : "https://schema.org/identifier"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The identifier property represents any kind of identifier for any kind of <a class=\"localLink\" href=\"http://schema.org/Thing\">Thing</a>, such as ISBNs, GTIN codes, UUIDs etc. Schema.org provides dedicated properties for representing many of these, either as textual strings or as URL (URI) links. See <a href=\"/docs/datamodel.html#identifierBg\">background notes</a> for more details."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "identifier"
+  } ]
+}, {
+  "@id" : "http://schema.org/image",
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "http://schema.org/Thing"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "http://schema.org/ImageObject"
+  }, {
+    "@id" : "http://schema.org/URL"
+  } ],
+  "http://schema.org/sameAs" : [ {
+    "@id" : "https://schema.org/image"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An image of the item. This can be a <a class=\"localLink\" href=\"http://schema.org/URL\">URL</a> or a fully described <a class=\"localLink\" href=\"http://schema.org/ImageObject\">ImageObject</a>."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "image"
+  } ]
+}, {
+  "@id" : "http://schema.org/inverseOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://schema.org/isPartOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://schema.org/location",
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "http://schema.org/PostalAddress"
+  } ]
+}, {
+  "@id" : "http://schema.org/mainEntityOfPage",
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "http://schema.org/Thing"
+  } ],
+  "http://schema.org/inverseOf" : [ {
+    "@id" : "http://schema.org/mainEntity"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "http://schema.org/CreativeWork"
+  }, {
+    "@id" : "http://schema.org/URL"
+  } ],
+  "http://schema.org/sameAs" : [ {
+    "@id" : "https://schema.org/mainEntityOfPage"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Indicates a page (or other CreativeWork) for which this thing is the main entity being described. See <a href=\"/docs/datamodel.html#mainEntityBackground\">background notes</a> for details."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "mainEntityOfPage"
+  } ]
+}, {
+  "@id" : "http://schema.org/name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "http://schema.org/Thing"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "http://schema.org/Text"
+  } ],
+  "http://schema.org/sameAs" : [ {
+    "@id" : "https://schema.org/name"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The name of the item."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "name"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "rdfs:label"
+  } ]
+}, {
+  "@id" : "http://schema.org/originAddress",
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "http://schema.org/PostalAddress"
+  } ]
+}, {
+  "@id" : "http://schema.org/postOfficeBoxNumber",
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "http://schema.org/PostalAddress"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "http://schema.org/Text"
+  } ],
+  "http://schema.org/sameAs" : [ {
+    "@id" : "https://schema.org/postOfficeBoxNumber"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The post office box number for PO box addresses."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "postOfficeBoxNumber"
+  } ]
+}, {
+  "@id" : "http://schema.org/postalCode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "http://schema.org/GeoCoordinates"
+  }, {
+    "@id" : "http://schema.org/GeoShape"
+  }, {
+    "@id" : "http://schema.org/PostalAddress"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "http://schema.org/Text"
+  } ],
+  "http://schema.org/sameAs" : [ {
+    "@id" : "https://schema.org/postalCode"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The postal code. For example, 94043."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://schema.org/PostalAddress"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "postalCode"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://schema.org/potentialAction",
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "http://schema.org/Thing"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "http://schema.org/Action"
+  } ],
+  "http://schema.org/sameAs" : [ {
+    "@id" : "https://schema.org/potentialAction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Indicates a potential Action, which describes an idealized action in which this thing would play an 'object' role."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "potentialAction"
+  } ]
+}, {
+  "@id" : "http://schema.org/preferredNamespaceUri",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://schema.org/productSupported",
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "http://schema.org/ContactPoint"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "http://schema.org/Product"
+  }, {
+    "@id" : "http://schema.org/Text"
+  } ],
+  "http://schema.org/sameAs" : [ {
+    "@id" : "https://schema.org/productSupported"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The product or service this support contact point is related to (such as product support for a particular product line). This can be a specific product or product line (e.g. \"iPhone\") or a general category of products or services (e.g. \"smartphones\")."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "productSupported"
+  } ]
+}, {
+  "@id" : "http://schema.org/rangeIncludes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://schema.org/recipient",
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "http://schema.org/ContactPoint"
+  } ]
+}, {
+  "@id" : "http://schema.org/sameAs",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "http://schema.org/Thing"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "http://schema.org/URL"
+  } ],
+  "http://schema.org/sameAs" : [ {
+    "@id" : "https://schema.org/sameAs"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "URL of a reference Web page that unambiguously indicates the item's identity. E.g. the URL of the item's Wikipedia page, Wikidata entry, or official website."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "sameAs"
+  } ]
+}, {
+  "@id" : "http://schema.org/serviceArea",
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "http://schema.org/ContactPoint"
+  }, {
+    "@id" : "http://schema.org/Organization"
+  }, {
+    "@id" : "http://schema.org/Service"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "http://schema.org/AdministrativeArea"
+  }, {
+    "@id" : "http://schema.org/GeoShape"
+  }, {
+    "@id" : "http://schema.org/Place"
+  } ],
+  "http://schema.org/sameAs" : [ {
+    "@id" : "https://schema.org/serviceArea"
+  } ],
+  "http://schema.org/supersededBy" : [ {
+    "@id" : "http://schema.org/areaServed"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The geographic area where the service is provided."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "serviceArea"
+  } ]
+}, {
+  "@id" : "http://schema.org/servicePhone",
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "http://schema.org/ContactPoint"
+  } ]
+}, {
+  "@id" : "http://schema.org/servicePostalAddress",
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "http://schema.org/PostalAddress"
+  } ]
+}, {
+  "@id" : "http://schema.org/serviceSmsNumber",
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "http://schema.org/ContactPoint"
+  } ]
+}, {
+  "@id" : "http://schema.org/streetAddress",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "http://schema.org/PostalAddress"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "http://schema.org/Text"
+  } ],
+  "http://schema.org/sameAs" : [ {
+    "@id" : "https://schema.org/streetAddress"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Dirección de la calle, por ejemplo \"Calle Gran Vía, 1\"."
+  }, {
+    "@value" : "The street address. For example, 1600 Amphitheatre Pkwy."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://schema.org/PostalAddress"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "streetAddress"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://schema.org/subjectOf",
+  "http://purl.org/dc/terms/source" : [ {
+    "@id" : "https://github.com/schemaorg/schemaorg/issues/1670"
+  } ],
+  "http://schema.org/category" : [ {
+    "@value" : "issue-1670"
+  } ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "http://schema.org/Thing"
+  } ],
+  "http://schema.org/inverseOf" : [ {
+    "@id" : "http://schema.org/about"
+  } ],
+  "http://schema.org/isPartOf" : [ {
+    "@id" : "http://pending.schema.org"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "http://schema.org/CreativeWork"
+  }, {
+    "@id" : "http://schema.org/Event"
+  } ],
+  "http://schema.org/sameAs" : [ {
+    "@id" : "https://schema.org/subjectOf"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A CreativeWork or Event about this Thing.."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "subjectOf"
+  } ]
+}, {
+  "@id" : "http://schema.org/supersededBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://schema.org/telephone",
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "http://schema.org/ContactPoint"
+  }, {
+    "@id" : "http://schema.org/Organization"
+  }, {
+    "@id" : "http://schema.org/Person"
+  }, {
+    "@id" : "http://schema.org/Place"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "http://schema.org/Text"
+  } ],
+  "http://schema.org/sameAs" : [ {
+    "@id" : "https://schema.org/telephone"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The telephone number."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "telephone"
+  } ]
+}, {
+  "@id" : "http://schema.org/toRecipient",
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "http://schema.org/ContactPoint"
+  } ]
+}, {
+  "@id" : "http://schema.org/url",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "http://schema.org/Thing"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "http://schema.org/URL"
+  } ],
+  "http://schema.org/sameAs" : [ {
+    "@id" : "https://schema.org/url"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "URL of the item."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#Equipamiento"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "url"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#anyURI"
+  } ]
+}, {
+  "@id" : "http://schema.org/workLocation",
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "http://schema.org/ContactPoint"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/Servicio",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Servicio/s relacionados con un equipamiento. Esta clase se eliminará cuando se cree la ontología de servicios y trámites"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/Servicio#equipamiento",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/Servicio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#Equipamiento"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://creativecommons.org/ns#license" : [ {
+    "@value" : "http://creativecommons.org/licenses/by/4.0/"
+  } ],
+  "http://purl.org/dc/elements/1.1/contributor" : [ {
+    "@value" : "Oscar Corcho (Ontology Engineering Group - Universidad Politécnica de Madrid)"
+  } ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@value" : "Pablo Fernández Díaz (Universidad Politécnica de Madrid)"
+  } ],
+  "http://purl.org/dc/elements/1.1/date" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2018-01-15"
+  } ],
+  "http://purl.org/dc/elements/1.1/identifier" : [ {
+    "@value" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento"
+  } ],
+  "http://purl.org/dc/elements/1.1/rights" : [ {
+    "@value" : "Creative Commons Attribution 4.0 International (CC BY 4.0)"
+  } ],
+  "http://purl.org/dc/terms/hasFormat" : [ {
+    "@value" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento.html"
+  }, {
+    "@value" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento.owl"
+  } ],
+  "http://schema.org/preferredNamespaceUri" : [ {
+    "@value" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "es",
+    "@value" : "Primera versión de la ontología que describe los diferentes equipamientos municipales"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#Equipamiento",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Equipamiento perteneciente a una administración, al que cualquier ciudadano puede acudir"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#accesible",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Propiedad de un equipamiento que representa si es accesible (true) o no (false)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#Equipamiento"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#contactPoint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#Equipamiento"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "contact point"
+  }, {
+    "@language" : "es",
+    "@value" : "punto de contacto"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://schema.org/ContactPoint"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#descripcion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#Equipamiento"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#fechaAlta",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Fecha en la que el equipamiento se ha dado de alta"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#Equipamiento"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "fecha de alta"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#date"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#fechaBaja",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Fecha en la que el equipamiento se ha dado de baja"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#Equipamiento"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "fecha de baja"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#date"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#horario",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#Equipamiento"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#id",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Identificador del equipamiento referido."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#Equipamiento"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#tasa",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Precio del coste del servicio. Puede ser 0."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#Equipamiento"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#tipoEquipamiento",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#Equipamiento"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "tipo de equipamiento"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid1"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#titular",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Valor booleando que representa si el equipamiento es de carácter público (true) o privado (false)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#Equipamiento"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/equipamiento/tipo-equipamiento",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#ConceptScheme" ]
+}, {
+  "@id" : "http://www.opengis.net/ont/geosparql",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#date",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://www.w3.org/2002/07/owl#versionInfo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#Concept",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#inScheme",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "rdfs:label",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+} ]
