@@ -27,11 +27,11 @@
 </rdf:Description>
 <!--  -->
 <!--  -->
-<!-- ################################################################# -->
+<!-- ################################# -->
 <!-- # -->
 <!-- #    Annotation properties -->
 <!-- # -->
-<!-- ################################################################# -->
+<!-- ################################# -->
 <!--  -->
 <!--  -->
 <!-- http://creativecommons.org/ns#license -->
@@ -208,18 +208,18 @@
 <!--  -->
 <!--  -->
 <!--  -->
-<!-- ################################################################# -->
+<!-- ################################# -->
 <!-- # -->
 <!-- #    Object Properties -->
 <!-- # -->
-<!-- ################################################################# -->
+<!-- ################################# -->
 <!--  -->
 <!--  -->
 <!-- http://schema.org/address -->
 
 <rdf:Description rdf:about="http://schema.org/address">
 	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-	<rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento##Equipamiento"/>
+	<rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#Equipamiento"/>
 	<rdfs:range rdf:resource="http://schema.org/PostalAddress"/>
 	<schema:domainIncludes rdf:resource="http://schema.org/GeoCoordinates"/>
 	<schema:domainIncludes rdf:resource="http://schema.org/GeoShape"/>
@@ -238,24 +238,24 @@
 <rdf:Description rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/Servicio#equipamiento">
 	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
 	<rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/Servicio"/>
-	<rdfs:range rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento##Equipamiento"/>
+	<rdfs:range rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#Equipamiento"/>
 </rdf:Description>
 <!--  -->
-<!-- http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento##contactPoint -->
+<!-- http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#contactPoint -->
 
-<rdf:Description rdf:about="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento##contactPoint">
+<rdf:Description rdf:about="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#contactPoint">
 	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-	<rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento##Equipamiento"/>
+	<rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#Equipamiento"/>
 	<rdfs:range rdf:resource="http://schema.org/ContactPoint"/>
 	<rdfs:label xml:lang="en">contact point</rdfs:label>
 	<rdfs:label xml:lang="es">punto de contacto</rdfs:label>
 </rdf:Description>
 <!--  -->
-<!-- http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento##tipoEquipamiento -->
+<!-- http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#tipoEquipamiento -->
 
-<rdf:Description rdf:about="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento##tipoEquipamiento">
+<rdf:Description rdf:about="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#tipoEquipamiento">
 	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-	<rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento##Equipamiento"/>
+	<rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#Equipamiento"/>
 	<rdfs:range rdf:nodeID="genid1"/>
 </rdf:Description>
 
@@ -288,7 +288,7 @@
 	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento##tipoEquipamiento">
+<rdf:Description rdf:about="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#tipoEquipamiento">
 	<rdfs:label xml:lang="es">tipo de equipamiento</rdfs:label>
 </rdf:Description>
 <!--  -->
@@ -300,11 +300,11 @@
 <!--  -->
 <!--  -->
 <!--  -->
-<!-- ################################################################# -->
+<!-- ################################# -->
 <!-- # -->
 <!-- #    Data properties -->
 <!-- # -->
-<!-- ################################################################# -->
+<!-- ################################# -->
 <!--  -->
 <!--  -->
 <!-- http://schema.org/addressLocality -->
@@ -321,6 +321,22 @@
 </rdf:Description>
 <!--  -->
 <!-- http://schema.org/addressRegion -->
+
+<rdf:Description rdf:about="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#fechaAlta">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#Equipamiento"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    <rdfs:comment>Fecha en la que el equipamiento se ha dado de alta</rdfs:comment>
+    <rdfs:label>fecha de alta</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#fechaBaja">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#Equipamiento"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    <rdfs:comment>Fecha en la que el equipamiento se ha dado de baja</rdfs:comment>
+    <rdfs:label>fecha de baja</rdfs:label>
+</rdf:Description>
 
 <rdf:Description rdf:about="http://schema.org/addressRegion">
 	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
@@ -366,7 +382,7 @@
 
 <rdf:Description rdf:about="http://schema.org/url">
 	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-	<rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento##Equipamiento"/>
+	<rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#Equipamiento"/>
 	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
 	<schema:domainIncludes rdf:resource="http://schema.org/Thing"/>
 	<schema:rangeIncludes rdf:resource="http://schema.org/URL"/>
@@ -407,65 +423,65 @@
 	<rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"/>
 </rdf:Description>
 <!--  -->
-<!-- http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento##accesible -->
+<!-- http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#accesible -->
 
-<rdf:Description rdf:about="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento##accesible">
+<rdf:Description rdf:about="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#accesible">
 	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-	<rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento##Equipamiento"/>
+	<rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#Equipamiento"/>
 	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
 	<rdfs:comment>Propiedad de un equipamiento que representa si es accesible (true) o no (false)</rdfs:comment>
 </rdf:Description>
 <!--  -->
-<!-- http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento##descripcion -->
+<!-- http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#descripcion -->
 
-<rdf:Description rdf:about="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento##descripcion">
+<rdf:Description rdf:about="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#descripcion">
 	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-	<rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento##Equipamiento"/>
+	<rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#Equipamiento"/>
 	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
 </rdf:Description>
 <!--  -->
-<!-- http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento##horario -->
+<!-- http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#horario -->
 
-<rdf:Description rdf:about="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento##horario">
+<rdf:Description rdf:about="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#horario">
 	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-	<rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento##Equipamiento"/>
+	<rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#Equipamiento"/>
 	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
 </rdf:Description>
 <!--  -->
-<!-- http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento##id -->
+<!-- http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#id -->
 
-<rdf:Description rdf:about="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento##id">
+<rdf:Description rdf:about="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#id">
 	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-	<rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento##Equipamiento"/>
+	<rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#Equipamiento"/>
 	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
 	<rdfs:comment>Identificador del equipamiento referido.</rdfs:comment>
 </rdf:Description>
 <!--  -->
-<!-- http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento##tasa -->
+<!-- http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#tasa -->
 
-<rdf:Description rdf:about="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento##tasa">
+<rdf:Description rdf:about="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#tasa">
 	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-	<rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento##Equipamiento"/>
+	<rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#Equipamiento"/>
 	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
 	<rdfs:comment>Precio del coste del servicio. Puede ser 0.</rdfs:comment>
 </rdf:Description>
 <!--  -->
-<!-- http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento##titular -->
+<!-- http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#titular -->
 
-<rdf:Description rdf:about="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento##titular">
+<rdf:Description rdf:about="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#titular">
 	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-	<rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento##Equipamiento"/>
+	<rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#Equipamiento"/>
 	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
 	<rdfs:comment>Valor booleando que representa si el equipamiento es de carácter público (true) o privado (false)</rdfs:comment>
 </rdf:Description>
 <!--  -->
 <!--  -->
 <!--  -->
-<!-- ################################################################# -->
+<!-- ################################# -->
 <!-- # -->
 <!-- #    Classes -->
 <!-- # -->
-<!-- ################################################################# -->
+<!-- ################################# -->
 <!--  -->
 <!--  -->
 <!-- http://schema.org/ContactPoint -->
@@ -524,9 +540,9 @@
 	<rdfs:comment>Servicio/s relacionados con un equipamiento. Esta clase se eliminará cuando se cree la ontología de servicios y trámites</rdfs:comment>
 </rdf:Description>
 <!--  -->
-<!-- http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento##Equipamiento -->
+<!-- http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#Equipamiento -->
 
-<rdf:Description rdf:about="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento##Equipamiento">
+<rdf:Description rdf:about="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#Equipamiento">
 	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
 	<rdfs:comment xml:lang="es">Equipamiento perteneciente a una administración, al que cualquier ciudadano puede acudir</rdfs:comment>
 </rdf:Description>
@@ -551,11 +567,11 @@
 <!--  -->
 <!--  -->
 <!--  -->
-<!-- ################################################################# -->
+<!-- ################################# -->
 <!-- # -->
 <!-- #    Individuals -->
 <!-- # -->
-<!-- ################################################################# -->
+<!-- ################################# -->
 <!--  -->
 <!--  -->
 <!-- http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/equipamiento/tipo-equipamiento -->
@@ -567,11 +583,11 @@
 <!--  -->
 <!--  -->
 <!--  -->
-<!-- ################################################################# -->
+<!-- ################################# -->
 <!-- # -->
 <!-- #    Annotations -->
 <!-- # -->
-<!-- ################################################################# -->
+<!-- ################################# -->
 <!--  -->
 <!--  -->
 
