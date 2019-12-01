@@ -1,14 +1,14 @@
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#> <http://creativecommons.org/ns#license> "http://creativecommons.org/licenses/by/4.0/" .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#> <http://purl.org/dc/elements/1.1/contributor> "Oscar Corcho (Ontology Engineering Group - Universidad Politécnica de Madrid)" .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#> <http://purl.org/dc/elements/1.1/creator> "Pablo Fernández Díaz (Universidad Politécnica de Madrid)" .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#> <http://purl.org/dc/elements/1.1/date> "2018-01-15"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#> <http://purl.org/dc/elements/1.1/identifier> "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento" .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#> <http://purl.org/dc/elements/1.1/rights> "Creative Commons Attribution 4.0 International (CC BY 4.0)" .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#> <http://purl.org/dc/terms/hasFormat> "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento.html" .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#> <http://purl.org/dc/terms/hasFormat> "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento.owl" .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#> <http://schema.org/preferredNamespaceUri> "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#" .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#> <http://www.w3.org/2002/07/owl#versionInfo> "Primera versión de la ontología que describe los diferentes equipamientos municipales"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#> <http://creativecommons.org/ns#license> "http://creativecommons.org/licenses/by/4.0/" .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#> <http://purl.org/dc/elements/1.1/contributor> "Oscar Corcho (Ontology Engineering Group - Universidad Politécnica de Madrid)" .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#> <http://purl.org/dc/elements/1.1/creator> "Pablo Fernández Díaz (Universidad Politécnica de Madrid)" .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#> <http://purl.org/dc/elements/1.1/date> "2018-01-15"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#> <http://purl.org/dc/elements/1.1/identifier> "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal" .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#> <http://purl.org/dc/elements/1.1/rights> "Creative Commons Attribution 4.0 International (CC BY 4.0)" .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#> <http://purl.org/dc/terms/hasFormat> "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal.html" .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#> <http://purl.org/dc/terms/hasFormat> "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal.owl" .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#> <http://schema.org/preferredNamespaceUri> "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#" .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#> <http://www.w3.org/2002/07/owl#versionInfo> "Primera versión de la ontología que describe los diferentes equipamientos municipales"@es .
 # 
 # 
 # #################################################################
@@ -141,7 +141,7 @@
 # 
 # http://schema.org/address
 <http://schema.org/address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://schema.org/address> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#Equipamiento> .
+<http://schema.org/address> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#Equipamiento> .
 <http://schema.org/address> <http://www.w3.org/2000/01/rdf-schema#range> <http://schema.org/PostalAddress> .
 <http://schema.org/address> <http://schema.org/domainIncludes> <http://schema.org/GeoCoordinates> .
 <http://schema.org/address> <http://schema.org/domainIncludes> <http://schema.org/GeoShape> .
@@ -154,22 +154,21 @@
 <http://schema.org/address> <http://www.w3.org/2000/01/rdf-schema#comment> "Physical address of the item." .
 <http://schema.org/address> <http://www.w3.org/2000/01/rdf-schema#label> "address" .
 # 
-# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/Servicio#equipamiento
-<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/Servicio#equipamiento> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/Servicio#equipamiento> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/Servicio> .
-<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/Servicio#equipamiento> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#Equipamiento> .
+# http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#contactPoint
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#contactPoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#contactPoint> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#Equipamiento> .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#contactPoint> <http://www.w3.org/2000/01/rdf-schema#range> <http://schema.org/ContactPoint> .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#contactPoint> <http://www.w3.org/2000/01/rdf-schema#label> "contact point"@en .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#contactPoint> <http://www.w3.org/2000/01/rdf-schema#label> "punto de contacto"@es .
 # 
-# http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#contactPoint
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#contactPoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#contactPoint> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#Equipamiento> .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#contactPoint> <http://www.w3.org/2000/01/rdf-schema#range> <http://schema.org/ContactPoint> .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#contactPoint> <http://www.w3.org/2000/01/rdf-schema#label> "contact point"@en .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#contactPoint> <http://www.w3.org/2000/01/rdf-schema#label> "punto de contacto"@es .
+# http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#equipamiento
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#equipamiento> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#equipamiento> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#Equipamiento> .
 # 
-# http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#tipoEquipamiento
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#tipoEquipamiento> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#tipoEquipamiento> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#Equipamiento> .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#tipoEquipamiento> <http://www.w3.org/2000/01/rdf-schema#range> _:genid1 .
+# http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#tipoEquipamiento
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#tipoEquipamiento> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#tipoEquipamiento> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#Equipamiento> .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#tipoEquipamiento> <http://www.w3.org/2000/01/rdf-schema#range> _:genid1 .
 _:genid1 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid4 .
 _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
@@ -178,10 +177,11 @@ _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/19
 _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid3 .
 _:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
-_:genid3 <http://www.w3.org/2002/07/owl#hasValue> <http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/equipamiento/tipo-equipamiento> .
+_:genid3 <http://www.w3.org/2002/07/owl#hasValue> <http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/equipamiento-municipal/tipo-equipamiento> .
+<http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/equipamiento-municipal/tipo-equipamiento> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#tipoEquipamiento> <http://www.w3.org/2000/01/rdf-schema#label> "tipo de equipamiento"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#tipoEquipamiento> <http://www.w3.org/2000/01/rdf-schema#label> "tipo de equipamiento"@es .
 # 
 # http://www.w3.org/2004/02/skos/core#inScheme
 <http://www.w3.org/2004/02/skos/core#inScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -240,7 +240,7 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # 
 # http://schema.org/url
 <http://schema.org/url> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://schema.org/url> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#Equipamiento> .
+<http://schema.org/url> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#Equipamiento> .
 <http://schema.org/url> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
 <http://schema.org/url> <http://schema.org/domainIncludes> <http://schema.org/Thing> .
 <http://schema.org/url> <http://schema.org/rangeIncludes> <http://schema.org/URL> .
@@ -268,53 +268,42 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://schema.org/Thing/ContactPoint#URL> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Thing> .
 <http://schema.org/Thing/ContactPoint#URL> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral> .
 # 
-# http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#accesible
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#accesible> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#accesible> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#Equipamiento> .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#accesible> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#accesible> <http://www.w3.org/2000/01/rdf-schema#comment> "Propiedad de un equipamiento que representa si es accesible (true) o no (false)" .
+# http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#accesible
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#accesible> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#accesible> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#Equipamiento> .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#accesible> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#accesible> <http://www.w3.org/2000/01/rdf-schema#comment> "Propiedad de un equipamiento que representa si es accesible (true) o no (false)" .
 # 
-# http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#descripcion
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#descripcion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#descripcion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#Equipamiento> .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#descripcion> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#fechaAlta
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#fechaAlta> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#fechaAlta> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#Equipamiento> .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#fechaAlta> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#fechaAlta> <http://www.w3.org/2000/01/rdf-schema#comment> "Fecha en la que el equipamiento se ha dado de alta" .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#fechaAlta> <http://www.w3.org/2000/01/rdf-schema#label> "fecha de alta" .
 # 
-# http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#fechaAlta
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#fechaAlta> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#fechaAlta> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#Equipamiento> .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#fechaAlta> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#fechaAlta> <http://www.w3.org/2000/01/rdf-schema#comment> "Fecha en la que el equipamiento se ha dado de alta" .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#fechaAlta> <http://www.w3.org/2000/01/rdf-schema#label> "fecha de alta" .
+# http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#fechaBaja
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#fechaBaja> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#fechaBaja> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#Equipamiento> .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#fechaBaja> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#fechaBaja> <http://www.w3.org/2000/01/rdf-schema#comment> "Fecha en la que el equipamiento se ha dado de baja" .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#fechaBaja> <http://www.w3.org/2000/01/rdf-schema#label> "fecha de baja" .
 # 
-# http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#fechaBaja
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#fechaBaja> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#fechaBaja> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#Equipamiento> .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#fechaBaja> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#fechaBaja> <http://www.w3.org/2000/01/rdf-schema#comment> "Fecha en la que el equipamiento se ha dado de baja" .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#fechaBaja> <http://www.w3.org/2000/01/rdf-schema#label> "fecha de baja" .
+# http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#horario
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#horario> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#horario> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#Equipamiento> .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#horario> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 # 
-# http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#horario
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#horario> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#horario> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#Equipamiento> .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#horario> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#tasa
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#tasa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#tasa> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#Equipamiento> .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#tasa> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#tasa> <http://www.w3.org/2000/01/rdf-schema#comment> "Precio del coste del servicio. Puede ser 0." .
 # 
-# http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#id
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#id> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#id> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#Equipamiento> .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#id> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#id> <http://www.w3.org/2000/01/rdf-schema#comment> "Identificador del equipamiento referido." .
-# 
-# http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#tasa
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#tasa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#tasa> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#Equipamiento> .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#tasa> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#tasa> <http://www.w3.org/2000/01/rdf-schema#comment> "Precio del coste del servicio. Puede ser 0." .
-# 
-# http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#titular
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#titular> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#titular> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#Equipamiento> .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#titular> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#titular> <http://www.w3.org/2000/01/rdf-schema#comment> "Valor booleando que representa si el equipamiento es de carácter público (true) o privado (false)" .
+# http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#titularidadPublica
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#titularidadPublica> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#titularidadPublica> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#Equipamiento> .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#titularidadPublica> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#titularidadPublica> <http://www.w3.org/2000/01/rdf-schema#comment> "Valor booleando que representa si el equipamiento es de carácter público (true) o privado (false)" .
 # 
 # 
 # 
@@ -363,9 +352,9 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/Servicio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/Servicio> <http://www.w3.org/2000/01/rdf-schema#comment> "Servicio/s relacionados con un equipamiento. Esta clase se eliminará cuando se cree la ontología de servicios y trámites" .
 # 
-# http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#Equipamiento
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#Equipamiento> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#Equipamiento> <http://www.w3.org/2000/01/rdf-schema#comment> "Equipamiento perteneciente a una administración, al que cualquier ciudadano puede acudir"@es .
+# http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#Equipamiento
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#Equipamiento> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#Equipamiento> <http://www.w3.org/2000/01/rdf-schema#comment> "Equipamiento perteneciente a una administración, al que cualquier ciudadano puede acudir"@es .
 # 
 # http://www.opengis.net/ont/geosparql
 <http://www.opengis.net/ont/geosparql> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -384,6 +373,8 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # #
 # #################################################################
 # 
+# 
+# http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/equipamiento-municipal/tipo-equipamiento
 # 
 # http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/equipamiento/tipo-equipamiento
 <http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/equipamiento/tipo-equipamiento> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .

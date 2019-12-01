@@ -1,22 +1,22 @@
-@prefix : <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#> .
+@prefix : <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#> .
+@base <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#> .
 
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#> rdf:type owl:Ontology ;
-                                                                                         <http://creativecommons.org/ns#license> "http://creativecommons.org/licenses/by/4.0/" ;
-                                                                                         <http://purl.org/dc/elements/1.1/contributor> "Oscar Corcho (Ontology Engineering Group - Universidad Politécnica de Madrid)" ;
-                                                                                         <http://purl.org/dc/elements/1.1/creator> "Pablo Fernández Díaz (Universidad Politécnica de Madrid)" ;
-                                                                                         <http://purl.org/dc/elements/1.1/date> "2018-01-15"^^xsd:dateTime ;
-                                                                                         <http://purl.org/dc/elements/1.1/identifier> "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento" ;
-                                                                                         <http://purl.org/dc/elements/1.1/rights> "Creative Commons Attribution 4.0 International (CC BY 4.0)" ;
-                                                                                         <http://purl.org/dc/terms/hasFormat> "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento.html" ,
-                                                                                                                              "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento.owl" ;
-                                                                                         <http://schema.org/preferredNamespaceUri> "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#" ;
-                                                                                         owl:versionInfo "Primera versión de la ontología que describe los diferentes equipamientos municipales"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#> rdf:type owl:Ontology ;
+                                                                                                   <http://creativecommons.org/ns#license> "http://creativecommons.org/licenses/by/4.0/" ;
+                                                                                                   <http://purl.org/dc/elements/1.1/contributor> "Oscar Corcho (Ontology Engineering Group - Universidad Politécnica de Madrid)" ;
+                                                                                                   <http://purl.org/dc/elements/1.1/creator> "Pablo Fernández Díaz (Universidad Politécnica de Madrid)" ;
+                                                                                                   <http://purl.org/dc/elements/1.1/date> "2018-01-15"^^xsd:dateTime ;
+                                                                                                   <http://purl.org/dc/elements/1.1/identifier> "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal" ;
+                                                                                                   <http://purl.org/dc/elements/1.1/rights> "Creative Commons Attribution 4.0 International (CC BY 4.0)" ;
+                                                                                                   <http://purl.org/dc/terms/hasFormat> "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal.html" ,
+                                                                                                                                        "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal.owl" ;
+                                                                                                   <http://schema.org/preferredNamespaceUri> "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#" ;
+                                                                                                   owl:versionInfo "Primera versión de la ontología que describe los diferentes equipamientos municipales"@es .
 
 #################################################################
 #    Annotation properties
@@ -174,13 +174,7 @@ xsd:date rdf:type rdfs:Datatype .
                             rdfs:label "address" .
 
 
-###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/Servicio#equipamiento
-<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/Servicio#equipamiento> rdf:type owl:ObjectProperty ;
-                                                                                    rdfs:domain <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/Servicio> ;
-                                                                                    rdfs:range :Equipamiento .
-
-
-###  http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#contactPoint
+###  http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#contactPoint
 :contactPoint rdf:type owl:ObjectProperty ;
               rdfs:domain :Equipamiento ;
               rdfs:range <http://schema.org/ContactPoint> ;
@@ -188,13 +182,18 @@ xsd:date rdf:type rdfs:Datatype .
                          "punto de contacto"@es .
 
 
-###  http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#tipoEquipamiento
+###  http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#equipamiento
+:equipamiento rdf:type owl:ObjectProperty ;
+              rdfs:range :Equipamiento .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#tipoEquipamiento
 :tipoEquipamiento rdf:type owl:ObjectProperty ;
                   rdfs:domain :Equipamiento ;
                   rdfs:range [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
                                                     [ rdf:type owl:Restriction ;
                                                       owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
-                                                      owl:hasValue <http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/equipamiento/tipo-equipamiento>
+                                                      owl:hasValue <http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/equipamiento-municipal/tipo-equipamiento>
                                                     ]
                                                   ) ;
                                rdf:type owl:Class
@@ -292,20 +291,14 @@ xsd:date rdf:type rdfs:Datatype .
                                            rdfs:range rdf:PlainLiteral .
 
 
-###  http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#accesible
+###  http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#accesible
 :accesible rdf:type owl:DatatypeProperty ;
            rdfs:domain :Equipamiento ;
            rdfs:range xsd:boolean ;
            rdfs:comment "Propiedad de un equipamiento que representa si es accesible (true) o no (false)" .
 
 
-###  http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#descripcion
-:descripcion rdf:type owl:DatatypeProperty ;
-             rdfs:domain :Equipamiento ;
-             rdfs:range xsd:string .
-
-
-###  http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#fechaAlta
+###  http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#fechaAlta
 :fechaAlta rdf:type owl:DatatypeProperty ;
            rdfs:domain :Equipamiento ;
            rdfs:range xsd:date ;
@@ -313,7 +306,7 @@ xsd:date rdf:type rdfs:Datatype .
            rdfs:label "fecha de alta" .
 
 
-###  http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#fechaBaja
+###  http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#fechaBaja
 :fechaBaja rdf:type owl:DatatypeProperty ;
            rdfs:domain :Equipamiento ;
            rdfs:range xsd:date ;
@@ -321,31 +314,24 @@ xsd:date rdf:type rdfs:Datatype .
            rdfs:label "fecha de baja" .
 
 
-###  http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#horario
+###  http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#horario
 :horario rdf:type owl:DatatypeProperty ;
          rdfs:domain :Equipamiento ;
          rdfs:range xsd:string .
 
 
-###  http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#id
-:id rdf:type owl:DatatypeProperty ;
-    rdfs:domain :Equipamiento ;
-    rdfs:range rdfs:Literal ;
-    rdfs:comment "Identificador del equipamiento referido." .
-
-
-###  http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#tasa
+###  http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#tasa
 :tasa rdf:type owl:DatatypeProperty ;
       rdfs:domain :Equipamiento ;
       rdfs:range xsd:float ;
       rdfs:comment "Precio del coste del servicio. Puede ser 0." .
 
 
-###  http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#titular
-:titular rdf:type owl:DatatypeProperty ;
-         rdfs:domain :Equipamiento ;
-         rdfs:range xsd:boolean ;
-         rdfs:comment "Valor booleando que representa si el equipamiento es de carácter público (true) o privado (false)" .
+###  http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#titularidadPublica
+:titularidadPublica rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :Equipamiento ;
+                    rdfs:range xsd:boolean ;
+                    rdfs:comment "Valor booleando que representa si el equipamiento es de carácter público (true) o privado (false)" .
 
 
 #################################################################
@@ -396,7 +382,7 @@ xsd:date rdf:type rdfs:Datatype .
                                                                        rdfs:comment "Servicio/s relacionados con un equipamiento. Esta clase se eliminará cuando se cree la ontología de servicios y trámites" .
 
 
-###  http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#Equipamiento
+###  http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento-municipal#Equipamiento
 :Equipamiento rdf:type owl:Class ;
               rdfs:comment "Equipamiento perteneciente a una administración, al que cualquier ciudadano puede acudir"@es .
 
@@ -416,6 +402,10 @@ xsd:date rdf:type rdfs:Datatype .
 #################################################################
 #    Individuals
 #################################################################
+
+###  http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/equipamiento-municipal/tipo-equipamiento
+<http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/equipamiento-municipal/tipo-equipamiento> rdf:type owl:NamedIndividual .
+
 
 ###  http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/equipamiento/tipo-equipamiento
 <http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/equipamiento/tipo-equipamiento> rdf:type owl:NamedIndividual ,
